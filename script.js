@@ -38,6 +38,7 @@ var lable=document.createElement("label");
             }
         
           function done(ele,ele1) { 
+             
               if(ele1!="")
               {
                   var divhead =document.createElement("div")
@@ -45,7 +46,14 @@ var lable=document.createElement("label");
                   h4.innerHTML=`${ele1} brewery details`
                   divhead.append(h4)
                   document.body.append(divhead)
-                
+              }
+              if(ele==""){
+                var nothig = document.createElement("div")
+               var h3 =document.createElement("h3")
+               h3.innerHTML="THERE IS NON OF THE DATA"
+               nothig.append(h3);
+               document.body.append(nothig)
+            }
                 for(let i=0;i<ele.length;i++){
                           
                    var main=document.createElement("div")
@@ -67,6 +75,6 @@ var lable=document.createElement("label");
                     document.body.append(main)
             }
             
-            }}
+            }
             form.append(lable,br,input,button)
             document.body.append(form);
