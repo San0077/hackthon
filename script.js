@@ -2,14 +2,14 @@ var form =document.createElement("form")
 
 var lable=document.createElement("label");
 
-    lable.innerHTML="Enter the country name";
+    lable.innerHTML="Enter the city name";
     lable.setAttribute("for","text");
     var br=document.createElement("br");
     var input=document.createElement("br");
 
     var input=document.createElement("input");
     input.setAttribute("type","text");
-    input.setAttribute("placeholder","country")
+    input.setAttribute("placeholder","city")
     input.setAttribute("id","text");
     input.setAttribute('required', '');
     
