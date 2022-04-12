@@ -40,7 +40,7 @@ var lable=document.createElement("label");
           function done(ele,ele1) { 
               if(ele1!="")
               {
-                  
+                  var divhead =document.createElement("div")
                   var h4=document.createElement("h4")
                   h4.innerHTML=`${ele1} brewery details`
                   divhead.append(h4)
